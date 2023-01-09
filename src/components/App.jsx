@@ -17,6 +17,7 @@ export class App extends Component{
   //Получаем данные из формы 
   //добавляем в массив контактов
   getFormData = dataFromUser => {
+    console.log("object",dataFromUser);
     const { contacts } = this.state;
     const existingContacts = contacts.find(contact => contact.name);
     //Проверка если контакт уже есть
