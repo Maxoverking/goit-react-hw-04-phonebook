@@ -1,8 +1,7 @@
 import { Label } from "components/Form/Form.styled"
 import { Input } from "./Filter.styled"
 import PropTypes from 'prop-types';
-
-export const Filter = ({ value, onChangeProps }) => {
+export default function Filter({ value, onChangeProps }) {
     return (
         <>
             <Label>Find contacts by name</Label>
